@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings ptype="MONOLITH" ppkg="fr.trendev.jeddict.issue.resources" epkg="domain" v="5.4" rws="_15762676151032" Pws="_15762676151032" cws="_15762676151032" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_15762676151031" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity compositePrimaryKeyClass="Entity_1PK" abs="false" class="Entity_1" v="true" jbn="false" xre="false" m="false" rootElement="_15762676151031" id="_15762676241403">
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_15762676427646</jpa:a>
+        </jpa:con>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:ath>jsie</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_15762676427646">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:element-collection target-class="java.lang.String" collection-type="java.util.List" cit="java.util.ArrayList" v="true" xvt="" name="comments" id="_15762676467087">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:element-collection>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_15762676241654">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="DEFAULT"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Entity_1.findAll">
+            <jpa:query>Select e from Entity_1 e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Entity_1.findByName">
+            <jpa:query>Select e from Entity_1 e where e.name=:name</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:c>
+        <ct>java.util.List</ct>
+        <ct>java.util.Set</ct>
+        <ct>java.util.Map</ct>
+        <ct>java.util.Collection</ct>
+        <cit>java.util.ArrayList</cit>
+        <cit>java.util.LinkedList</cit>
+        <cit>java.util.HashSet</cit>
+        <cit>java.util.TreeSet</cit>
+        <cit>java.util.HashMap</cit>
+    </jpa:c>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15762676151032">
+            <i ref="_15762676241403" x="169" y="150"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
